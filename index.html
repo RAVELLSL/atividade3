@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Exercícios - Internet, Redes e Ameaças Virtuais</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        .question h2 {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .answers {
+            margin-top: 10px;
+        }
+
+        .answers label {
+            display: block;
+            margin: 5px 0;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+            max-width: 600px;
+            max-height: 80%;
+            background: rgba(255, 255, 255, 1);
+            overflow-y: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        .modal-content {
+            padding: 20px;
+        }
+
+        .modal-content h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .modal-content ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .modal-content ul li {
+            margin: 10px 0;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 5px;
+        }
+
+        .close-btn {
+            display: block;
+            text-align: center;
+            margin: 20px auto 0;
+            padding: 10px 20px;
+            background-color: #dc3545;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .close-btn:hover {
+            background-color: #c82333;
+        }
+
+        .score {
+            font-size: 18px;
+            margin: 10px 0;
+            text-align: center;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Exercícios<br><br>Internet, Redes e Ameaças Virtuais</h1><br>
+
+        <!-- Question 1 -->
+        <div class="question">
+            <h2>1. Qual foi a origem da internet?</h2>
+            <div class="answers">
+                <label><input type="radio" name="q1" value="A"> A) Desenvolvimento de redes comerciais nos anos 1980.</label>
+                <label><input type="radio" name="q1" value="B"> B) Criação da World Wide Web por Tim Berners-Lee.</label>
+                <label><input type="radio" name="q1" value="C"> C) Pesquisas militares e acadêmicas na década de 1960.</label>
+                <label><input type="radio" name="q1" value="D"> D) Lançamento dos primeiros navegadores gráficos.</label>
+                <label><input type="radio" name="q1" value="E"> E) Desenvolvimento de redes sociais no início dos anos 2000.</label>
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">
+            <h2>2. O que é a ARPANET?</h2>
+            <div class="answers">
+                <label><input type="radio" name="q2" value="A"> A) Uma empresa pioneira em serviços de internet.</label>
+                <label><input type="radio" name="q2" value="B"> B) Um protocolo de comunicação para redes locais.</label>
+                <label><input type="radio" name="q2" value="C"> C) A rede que deu origem à internet, desenvolvida pelo Departamento de Defesa dos EUA.</label>
+                <label><input type="radio" name="q2" value="D"> D) Um software de navegação na internet.</label>
+                <label><input type="radio" name="q2" value="E"> E) Um tipo de malware que afeta redes de computadores.</label>
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question">
+            <h2>3. Qual é a principal função do protocolo TCP/IP?</h2>
+            <div class="answers">
+                <label><input type="radio" name="q3" value="A"> A) Proteger a rede contra ataques cibernéticos.</label>
+                <label><input type="radio" name="q3" value="B"> B) Gerenciar o acesso de usuários à internet.</label>
+                <label><input type="radio" name="q3" value="C"> C) Permitir a comunicação e troca de dados entre dispositivos na internet.</label>
+                <label><input type="radio" name="q3" value="D"> D) Fornecer serviços de e-mail aos usuários.</label>
+                <label><input type="radio" name="q3" value="E"> E) Controlar o acesso a sites específicos na web.</label>
+            </div>
+        </div>
+
+                <!-- Question 4 -->
+                <div class="question">
+                    <h2>4. O que caracteriza uma rede LAN (Local Area Network)?</h2>
+                    <div class="answers">
+                        <label><input type="radio" name="q4" value="A"> A) Conecta computadores em diferentes países.</label>
+                        <label><input type="radio" name="q4" value="B"> B) Abrange uma área metropolitana inteira.</label>
+                        <label><input type="radio" name="q4" value="C"> C) Conecta computadores em uma área geográfica limitada, como uma residência ou escritório.</label>
+                        <label><input type="radio" name="q4" value="D"> D) É utilizada exclusivamente para conexões sem fio.</label>
+                        <label><input type="radio" name="q4" value="E"> E) Conecta dispositivos móveis em uma rede global.</label>
+                    </div>
+                </div>
+        
+                <!-- Question 5 -->
+                <div class="question">
+                    <h2>5. Qual dos seguintes dispositivos é responsável por encaminhar pacotes de dados entre redes diferentes?</h2>
+                    <div class="answers">
+                        <label><input type="radio" name="q5" value="A"> A) Switch.</label>
+                        <label><input type="radio" name="q5" value="B"> B) Modem.</label>
+                        <label><input type="radio" name="q5" value="C"> C) Roteador.</label>
+                        <label><input type="radio" name="q5" value="D"> D) Firewall.</label>
+                        <label><input type="radio" name="q5" value="E"> E) Hub.</label>
+                    </div>
+                </div>
+        
+                <!-- Question 6 -->
+                <div class="question">
+                    <h2>6. O que é malware?</h2>
+                    <div class="answers">
+                        <label><input type="radio" name="q6" value="A"> A) Um tipo de hardware que melhora a segurança da rede.</label>
+                        <label><input type="radio" name="q6" value="B"> B) Software malicioso que inclui vírus, worms, trojans e spyware.</label>
+                        <label><input type="radio" name="q6" value="C"> C) Um protocolo de segurança para redes sem fio.</label>
+                        <label><input type="radio" name="q6" value="D"> D) Um método de criptografia de dados.</label>
+                        <label><input type="radio" name="q6" value="E"> E) Um tipo de firewall utilizado em redes corporativas.</label>
+                    </div>
+                </div>
+        
+                <!-- Question 7 -->
+                <div class="question">
+                    <h2>7. Qual é a função de um firewall?</h2>
+                    <div class="answers">
+                        <label><input type="radio" name="q7" value="A"> A) Detectar e remover vírus do computador.</label>
+                        <label><input type="radio" name="q7" value="B"> B) Monitorar e controlar o tráfego de rede, bloqueando acessos não autorizados.</label>
+                        <label><input type="radio" name="q7" value="C"> C) Aumentar a velocidade de conexão com a internet.</label>
+                        <label><input type="radio" name="q7" value="D"> D) Armazenar dados de backup da rede.</label>
+                        <label><input type="radio" name="q7" value="E"> E) Gerenciar endereços IP na rede local.</label>
+                    </div>
+                </div>
+        
+                <!-- Question 8 -->
+                <div class="question">
+                    <h2>8. O que é phishing?</h2>
+                    <div class="answers">
+                        <label><input type="radio" name="q8" value="A"> A) Um tipo de ataque que sobrecarrega um serviço online, tornando-o indisponível.</label>
+                        <label><input type="radio" name="q8" value="B"> B) Técnica de fraude para obter informações pessoais, como senhas e dados bancários.</label>
+                        <label><input type="radio" name="q8" value="C"> C) Um software que protege contra malware.</label>
+                        <label><input type="radio" name="q8" value="D"> D) Um protocolo de transferência de arquivos na internet.</label>
+                        <label><input type="radio" name="q8" value="E"> E) Um método de compressão de dados para transmissão mais rápida.</label>
+                    </div>
+                </div>
+        
+                <!-- Question 9 -->
+                <div class="question">
+                    <h2>9. Qual das seguintes medidas é eficaz para proteger-se contra ameaças virtuais?</h2>
+                    <div class="answers">
+                        <label><input type="radio" name="q9" value="A"> A) Utilizar senhas simples e fáceis de lembrar.</label>
+                        <label><input type="radio" name="q9" value="B"> B) Desativar o firewall do sistema.</label>
+                        <label><input type="radio" name="q9" value="C"> C) Manter o sistema operacional e softwares sempre atualizados.</label>
+                        <label><input type="radio" name="q9" value="D"> D) Compartilhar informações pessoais em redes sociais sem restrições.</label>
+                        <label><input type="radio" name="q9" value="E"> E) Evitar o uso de antivírus para não sobrecarregar o sistema.</label>
+                    </div>
+                </div>
+        
+                <!-- Question 10 -->
+                <div class="question">
+                    <h2>10. O que é ransomware?</h2>
+                    <div class="answers">
+                        <label><input type="radio" name="q10" value="A"> A) Um tipo de malware que criptografa os dados do usuário e exige um resgate para desbloqueá-los.</label>
+                        <label><input type="radio" name="q10" value="B"> B) Um software legítimo utilizado para backup de dados.</label>
+                        <label><input type="radio" name="q10" value="C"> C) Um protocolo de segurança para redes sem fio.</label>
+                        <label><input type="radio" name="q10" value="D"> D) Um tipo de ataque que visa roubar informações de cartão de crédito.</label>
+                        <label><input type="radio" name="q10" value="E"> E) Um método de phishing direcionado a empresas.</label>
+                    </div>
+                </div>
+        
+
+        <button onclick="calculateScore()">Responder</button>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <h2>Gabarito e Explicações</h2>
+            <div class="score" id="score"></div>
+            <ul id="answers-list">
+                <!-- Gabarito será preenchido dinamicamente -->
+            </ul>
+            <button class="close-btn" onclick="closeModal()">Fechar</button>
+        </div>
+    </div>
+
+    <script>
+        const correctAnswers = {
+            q1: "C",
+            q2: "C",
+            q3: "C",
+            q4: "C",
+            q5: "C",
+            q6: "B",
+            q7: "B",
+            q8: "B",
+            q9: "C",
+            q10: "A"
+        };
+
+        const explanations = {
+            q1: "A internet teve origem em pesquisas militares e acadêmicas na década de 1960.",
+            q2: "ARPANET foi a rede desenvolvida pelo Departamento de Defesa dos EUA que deu origem à internet.",
+            q3: "O protocolo TCP/IP permite a comunicação e troca de dados na internet.",
+            q4: "LAN conecta computadores em áreas limitadas, como escritórios.",
+            q5: "O roteador é responsável por encaminhar pacotes de dados entre redes.",
+            q6: "Malware é um software malicioso, como vírus e spyware.",
+            q7: "O firewall controla o tráfego de rede e bloqueia acessos não autorizados.",
+            q8: "Phishing é uma técnica de fraude para obter informações pessoais.",
+            q9: "Manter sistemas atualizados protege contra ameaças virtuais.",
+            q10: "Ransomware criptografa dados e exige resgate para desbloqueá-los."
+        };
+
+        function calculateScore() {
+            let score = 0;
+            const totalQuestions = Object.keys(correctAnswers).length;
+            const answersList = document.getElementById("answers-list");
+            answersList.innerHTML = "";
+
+            for (let key in correctAnswers) {
+                const userAnswer = document.querySelector(`input[name="${key}"]:checked`);
+                if (userAnswer) {
+                    const isCorrect = userAnswer.value === correctAnswers[key];
+                    if (isCorrect) {
+                        score++;
+                    }
+                    answersList.innerHTML += `
+                        <li>
+                            <strong>${key.toUpperCase().replace("Q", "")}. Resposta Correta: ${correctAnswers[key]}</strong> 
+                            - ${explanations[key]}
+                            ${isCorrect ? "✅" : "❌"}
+                        </li>`;
+                } else {
+                    answersList.innerHTML += `
+                        <li>
+                            <strong>${key.toUpperCase().replace("Q", "")}. Resposta Correta: ${correctAnswers[key]}</strong> 
+                            - ${explanations[key]}
+                            ❌ (Não respondida)
+                        </li>`;
+                }
+            }
+
+            document.getElementById("score").innerText = `Você acertou ${score} de ${totalQuestions} questões.`;
+            document.getElementById("modal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("modal").style.display = "none";
+        }
+    </script>
+</body>
+</html>
